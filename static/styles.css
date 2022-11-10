@@ -119,7 +119,7 @@ h1:hover {
 
 .movie-title {
     position: relative;
-    margin-right: 25%;
+    margin-right: 40%;
     margin-top: 2.5%;
     font-family: 'Roboto', sans-serif;
 }
@@ -141,3 +141,29 @@ h1:hover {
 .users-list {
     color: white;
 }
+
+h2 {
+    color: white;
+    margin-top: 17%;
+    margin-right: -10%;
+}
+
+.rating {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-right: -30%;
+    margin-top: 20%;
+}
+
+.submit {
+    margin-left: 45%;
+}
+
+.user-details {
+    color: white;
+    margin-top: 6%;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+

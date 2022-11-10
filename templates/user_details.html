@@ -4,6 +4,7 @@
 
 {% block body %}
 <h1>{{ user.email }}</h1>
+<div class="user-details">
 <ul>
 {% for rating in user.ratings %}
     <li>
@@ -14,4 +15,5 @@
     </li>
 {% endfor %}
 </ul>
+</div>
 {% endblock %}

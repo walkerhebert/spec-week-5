@@ -83,7 +83,7 @@ def process_login():
 
     user = crud.get_user_by_email(email)
     if not user or user.password != password:
-        flash("The email or password you entered was incorrect.")
+        flash("The email or password you entered was not valid.")
     else:
         # Log in user by storing the user's email in session
         session["user_email"] = user.email
@@ -108,9 +108,9 @@ def create_rating(movie_id):
     rating_score = request.form.get("rating")
 
     if logged_in_email is None:
-        flash("You must log in to rate a movie.")
+        flash("Log in to rate a movie!")
     elif not rating_score:
-        flash("Error: you didn't select a score for your rating.")
+        flash("Error: you didn't select a rating.")
     else:
         user = crud.get_user_by_email(logged_in_email)
         movie = crud.get_movie_by_id(movie_id)
