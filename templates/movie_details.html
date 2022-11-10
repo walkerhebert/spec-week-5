@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ movie.title }} - Details{% endblock %}
+
+{% block body %}
+<div class="movie-title">
+<h1>{{ movie.title }}</h1>
+</div>
+<div class="descrip">
+<p>
+  {{ movie.overview }}
+</p>
+</div>
+<img class="img" src="{{ movie.poster_path }}">
+{% endblock %}
