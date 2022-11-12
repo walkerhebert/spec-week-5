@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
 
-
+* {
+    border: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     height: 10vh;
@@ -8,6 +12,7 @@ body {
    flex-direction: row;
    justify-content: center;
    background-color: rgb(25, 25, 25);
+   width: 100%;
 }
 
 h1 {
@@ -37,6 +42,11 @@ h1:hover {
 .nav a {
     color: white;
     text-decoration: none;
+}
+
+.list-style::marker {
+    display: none;
+    color: rgb(25, 25, 25);
 }
 
 .nav ul {
@@ -104,10 +114,14 @@ h1:hover {
 }
 
 .row {
-    margin-top: 10%;
-    margin-right: 30%;
+    margin-top: 2%;
     position: relative;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 93%;
 }
 
 .img {
@@ -165,5 +179,14 @@ h2 {
     margin-top: 6%;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
+}
+
+.movie-posters {
+    height: 350px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30%;
 }
 

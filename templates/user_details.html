@@ -9,7 +9,7 @@
 {% for rating in user.ratings %}
     <li>
         {{ rating.movie.title }}:
-        <span class=rating_num_{{ rating.rating_id }} >
+        <span class=rating_num_ {{ rating.rating_id }} >
             {{ rating.score }}
         </span>
     </li>
